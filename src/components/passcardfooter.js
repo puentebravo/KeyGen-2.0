@@ -1,4 +1,5 @@
 import React from "react";
+import GenerateBtn from "./generatebtn";
 
 function PassCardFooter() {
     return (
@@ -7,7 +8,7 @@ function PassCardFooter() {
         <p id="lCaseEl"></p>
         <p id="uCaseEl"></p>
         <p id="numCharEl"></p>
-        <button id="generate" className="btn">GENERATE</button>
+        <GenerateBtn />
       </div>
     )
 }
