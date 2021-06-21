@@ -1,13 +1,13 @@
+import Lead from './components/lead/index';
+import PassCard from './components/passcard/index';
 import './App.css';
-import Lead from './components/lead';
-import PassCard from './components/passcard';
 
 function App() {
   return (
-    <>
+    <div>
     <Lead />
     <PassCard />
-    </>
+    </div>
   );
 }
 
