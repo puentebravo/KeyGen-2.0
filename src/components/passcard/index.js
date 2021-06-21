@@ -1,6 +1,7 @@
 import React from "react";
 import PassCardFooter from "../passcardfooter/index";
 import PassOutput from "../passwordoutput/index";
+import "./passcard.css"
 
 function PassCard() {
   return (

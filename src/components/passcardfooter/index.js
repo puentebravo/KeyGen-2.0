@@ -1,5 +1,6 @@
 import React from "react";
 import GenerateBtn from "../generatebtn/index";
+import "./passcardfooter.css"
 
 function PassCardFooter() {
     return (

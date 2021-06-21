@@ -1,4 +1,5 @@
 import React from "react";
+import "./generatebtn.css"
 
 function GenerateBtn() {
   return (

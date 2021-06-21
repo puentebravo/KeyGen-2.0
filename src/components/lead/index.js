@@ -1,4 +1,5 @@
 import React from "react";
+import "./lead.css"
 
 function Lead() {
   return (
