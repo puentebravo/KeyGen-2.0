@@ -7,7 +7,7 @@ function PassCard() {
   return (
     <div className="card">
       <div className="card-header">
-        <h2>Generate Password</h2>
+        <h2 className="text-center">Generate Password</h2>
       </div>
       <PassOutput />
       <PassCardFooter />
