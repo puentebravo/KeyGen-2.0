@@ -36,13 +36,14 @@ function PassCardFooter(props) {
         password += pwSource.charAt(Math.floor(Math.random() * x));
       }
       //Returns password
+      console.log(password);
       return password;
     } else {
       alert(
         "You require more pylons! Try again, and enter a number between 8 and 128."
       );
     }
-  }
+  };
 
   return (
     <div className="card-footer">
@@ -51,30 +52,54 @@ function PassCardFooter(props) {
       <p id="uCaseEl"></p>
       <p id="numCharEl"></p> */}
       <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" id="spcCharEl" />
+        <input
+          class="form-check-input"
+          type="checkbox"
+          data-toggle="switch"
+          value="true"
+          id="spcCharEl"
+        />
         <label class="form-check-label" for="spcCharEl">
           Special Characters
         </label>
       </div>
       <div class="form-check form-switch" id="lCaseEl">
-        <input class="form-check-input" type="checkbox" id="lCaseEl" />
+        <input
+          class="form-check-input"
+          type="checkbox"
+          data-toggle="switch"
+          value="true"
+          id="lCaseEl"
+        />
         <label class="form-check-label" for="lCaseEl">
           Lower Case Letters
         </label>
       </div>
       <div class="form-check form-switch" id="uCaseEl">
-        <input class="form-check-input" type="checkbox" id="uCaseEl" />
+        <input
+          class="form-check-input"
+          type="checkbox"
+          data-toggle="switch"
+          value="true"
+          id="uCaseEl"
+        />
         <label class="form-check-label" for="uCaseEl">
           Upper Case Letters
         </label>
       </div>
       <div class="form-check form-switch" id="numCharEl">
-        <input class="form-check-input" type="checkbox" id="numCharEl" />
+        <input
+          class="form-check-input"
+          type="checkbox"
+          data-toggle="switch"
+          value="true"
+          id="numCharEl"
+        />
         <label class="form-check-label" for="numCharEl">
           Numbers
         </label>
       </div>
-      <GenerateBtn generatePass={generatePass}/>
+      <GenerateBtn generatePass={generatePass} />
     </div>
   );
 }
