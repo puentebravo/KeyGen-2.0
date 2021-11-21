@@ -5,15 +5,12 @@ function GenerateBtn(props) {
 
   const [pwLength, setpwLength] = useState()
 
-  // need to figure out a way to grab pw length from the form element
-
   const handleFormSubmit = (event) => {
     event.preventDefault();
     generatePass(pwLength)
   };
 
   const handleInputChange = (event) => {
-    console.log(event.target.value);
     setpwLength(event.target.value)
   }
 
