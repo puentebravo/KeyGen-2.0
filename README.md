@@ -2,7 +2,7 @@
 
 ## Description
 
-KeyGen 2.0 makes it easy to generate a password of variable length on the go. Powered by react and PWA-enabled, Keygen works on or offline, on the mobile device of your choice.
+KeyGen 2.0 makes it easy to generate a password of variable length on the go.
 
 ## Table of Contents
 
