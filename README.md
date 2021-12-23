@@ -18,6 +18,8 @@ KeyGen 2.0 makes it easy to generate a password of variable length on the go.
 
 Navigate to the deployed URL, then follow your devices' process to install a webapp.
 
+[Install Here:](https://www.charliepuente.com/KeyGen-2.0/)
+
 ## Usage
 
 Simply enter the desired length of your password, and tap the Generate button. A phrase containing numbers, letters, and symbols will appear in moments. We highly recommend using a password vault to save the result.
