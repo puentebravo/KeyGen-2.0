@@ -2,7 +2,7 @@
 
 ## Description
 
-KeyGen 2.0 makes it easy to generate a password of variable length on the go.
+KeyGen 2.0 makes it easy to generate a password of variable length on the go. Powered by React, Keygen is a quick and easy way to generate unique passwords on or offline.
 
 ## Table of Contents
 
@@ -28,7 +28,7 @@ Simply enter the desired length of your password, and tap the Generate button. A
 
 ## Credits
 
-Special thanks go to all who helped me with the implementation of the original KeyGen, as this legacy code was crucial to this refactor.
+Special thanks go to all who helped me with the implementation of the original KeyGen, as that legacy code was crucial to this refactor.
 
 ## Contributing
 
