@@ -4,10 +4,11 @@ const app = express();
 
 const PORT = process.env.PORT || 8080;
 
-app.use(express.static(path.join(__dirname, 'Client/build')));
-
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'Client/build', 'index.html'));
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("./client/public"));
+}
+app.get("*", function (req, res) {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
 app.listen(PORT, () => {
