@@ -24,7 +24,7 @@ Navigate to the deployed URL, then follow your devices' process to install a web
 
 Simply enter the desired length of your password, and tap the Generate button. A phrase containing numbers, letters, and symbols will appear in moments. We highly recommend using a password vault to save the result.
 
-![KeyGen in Action](./assets/screenShot.png)
+![KeyGen in Action](./Client/assets/screenShot.png)
 
 ## Credits
 
