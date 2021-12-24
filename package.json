@@ -1,6 +1,9 @@
 {
   "name": "keygen-2.0",
   "version": "1.0.0",
+  "engines": {
+    "node": "15.x"
+  },
   "description": "A React-powered, password-generating pwa",
   "main": "server.js",
   "scripts": {
