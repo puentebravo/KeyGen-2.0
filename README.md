@@ -18,7 +18,7 @@ KeyGen 2.0 makes it easy to generate a password of variable length on the go. Po
 
 Navigate to the deployed URL, then follow your devices' process to install a webapp.
 
-[Install Here:](https://www.charliepuente.com/KeyGen-2.0/)
+[Install Here](https://gentle-sea-23195.herokuapp.com/)
 
 ## Usage
 
