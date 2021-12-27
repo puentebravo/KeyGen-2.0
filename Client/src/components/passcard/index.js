@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import CopyBtn from "../copybtn/index"
 import PassCardFooter from "../passcardfooter/index";
 import PassOutput from "../passwordoutput/index";
 import "./passcard.css";
@@ -26,13 +27,18 @@ function PassCard() {
     }
   };
 
+  const copyPass = (text) => {
+    navigator.clipboard.writeText(text);
+    console.log(`Copied ${text}`)
+  }
+
   return (
     <div className="card">
       <div className="card-header">
         <h2 className="text-center">Generate Password</h2>
       </div>
       <PassOutput password={password} />
-
+      <CopyBtn password={password} copyPass={copyPass} />
       <PassCardFooter generatePass={generatePass} />
     </div>
   );
