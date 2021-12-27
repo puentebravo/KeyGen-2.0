@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CopyBtn from "../copybtn/index"
+import CopyBtn from "../copybtn/index";
 import PassCardFooter from "../passcardfooter/index";
 import PassOutput from "../passwordoutput/index";
 import "./passcard.css";
@@ -7,6 +7,7 @@ import "./passcard.css";
 function PassCard() {
   const [password, setPassword] = useState();
 
+  // Generates a password of the specified length if conditions are met
   const generatePass = (pwLength) => {
     let numLength = parseInt(pwLength);
 
@@ -15,7 +16,6 @@ function PassCard() {
     let genPass = "";
 
     if (numLength >= 8 && numLength <= 128) {
-      console.log(pwSource);
       for (let i = 0, x = pwSource.length; i < numLength; i++) {
         genPass += pwSource.charAt(Math.floor(Math.random() * x));
       }
@@ -27,10 +27,10 @@ function PassCard() {
     }
   };
 
+  // Copies password output to clipboard on click.
   const copyPass = (text) => {
     navigator.clipboard.writeText(text);
-    console.log(`Copied ${text}`)
-  }
+  };
 
   return (
     <div className="card">
