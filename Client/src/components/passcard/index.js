@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import CopyBtn from "../copybtn/index";
 import PassCardFooter from "../passcardfooter/index";
 import PassOutput from "../passwordoutput/index";
 import "./passcard.css";
 
 function PassCard() {
   const [password, setPassword] = useState();
+  const [copyStatus, setCopyStatus] = useState("Copy to Clipboard");
 
   // Generates a password of the specified length if conditions are met
   const generatePass = (pwLength) => {
@@ -25,11 +25,19 @@ function PassCard() {
         "You require more pylons! Please select a number between 8 and 128."
       );
     }
+
+    setCopyStatus("Copy to Clipboard");
   };
 
   // Copies password output to clipboard on click.
-  const copyPass = (text) => {
-    navigator.clipboard.writeText(text);
+  const copyPass = () => {
+    navigator.clipboard.writeText(password);
+    setCopyStatus("Copied!");
+  };
+
+  const handleFormCopy = (event) => {
+    event.stopPropagation();
+    copyPass();
   };
 
   return (
@@ -38,8 +46,12 @@ function PassCard() {
         <h2 className="text-center">Generate Password</h2>
       </div>
       <PassOutput password={password} />
-      <CopyBtn password={password} copyPass={copyPass} />
-      <PassCardFooter generatePass={generatePass} />
+      <PassCardFooter
+        generatePass={generatePass}
+        password={password}
+        copyPass={handleFormCopy}
+        copyStatus={copyStatus}
+      />
     </div>
   );
 }
