@@ -5,7 +5,7 @@ import "./passcard.css";
 
 function PassCard() {
   const [password, setPassword] = useState();
-  const [copyStatus, setCopyStatus] = useState("Copy to Clipboard");
+  const [copyStatus, setCopyStatus] = useState("Copy");
 
   // Generates a password of the specified length if conditions are met
   const generatePass = (pwLength) => {
@@ -26,7 +26,7 @@ function PassCard() {
       );
     }
 
-    setCopyStatus("Copy to Clipboard");
+    setCopyStatus("Copy");
   };
 
   // Copies password output to clipboard on click.
@@ -41,7 +41,7 @@ function PassCard() {
   };
 
   return (
-    <div className="card">
+    <div className="card bg-dark">
       <div className="card-header">
         <h2 className="text-center">Generate Password</h2>
       </div>
