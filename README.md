@@ -22,7 +22,7 @@ Navigate to the deployed URL, then follow your devices' process to install a web
 
 ## Usage
 
-Simply enter the desired length of your password, and tap the Generate button. A phrase containing numbers, letters, and symbols will appear in moments. We highly recommend using a password vault to save the result.
+Simply tap the Generate button. A phrase containing numbers, letters, and symbols will appear in moments. We highly recommend using a password vault to save the result.
 
 ![KeyGen in Action](./Client/assets/screenShot.png)
 
@@ -53,4 +53,4 @@ To read the license in its entirety, click here: [MIT](./LICENSE)
 
 ---
 
-Copyright [2021] [Charlie Puente]
+Copyright [2022] [Charlie Puente]
