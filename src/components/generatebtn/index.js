@@ -9,19 +9,23 @@ function GenerateBtn(props) {
     generatePass();
   };
 
- 
-
   return (
     <div className="row justify-content-center">
       <div className="col-auto">
         <button
+          className="cybr-btn mt-2"
           id="generate"
-          className="btn btn-success text-center"
           type="submit"
           onSubmit={handleFormSubmit}
           onClick={handleFormSubmit}
         >
-          GENERATE
+          GENERATE<span aria-hidden>_</span>
+          <span aria-hidden className="cybr-btn__glitch">
+            GENERATE_
+          </span>
+          <span aria-hidden className="cybr-btn__tag">
+            C77
+          </span>
         </button>
       </div>
       <div className="col-auto">
