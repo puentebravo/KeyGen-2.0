@@ -31,7 +31,7 @@ function PassCard() {
   };
 
   return (
-    <div className="card bg-dark">
+    <section className="glass-card" id="passcard">
       <div className="card-header">
         <h2 className="text-center">Generate Password</h2>
       </div>
@@ -42,7 +42,7 @@ function PassCard() {
         copyPass={handleFormCopy}
         copyStatus={copyStatus}
       />
-    </div>
+    </section>
   );
 }
 

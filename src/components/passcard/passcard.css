@@ -1,16 +1,16 @@
-.card {
-    border-radius: 5px;
-    border-width: 1px;
-    border-color: rgb(255, 61, 2);
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-    font-size: 18px;
-    font-family: monospace;
-    color: rgb(255, 61, 2);
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 30px 40px;
-  }
+.glass-card {
+  background: rgba(61, 52, 139, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(61, 52, 139, 0.2);
+  padding: 10px;
+  margin: 5rem 1rem 1rem 1rem;
+  
+  
+}
 
-  h2 {
-    text-align: center;
-  }
+
+
+h2 {
+  text-align: center;
+}
