@@ -7,12 +7,26 @@ function CopyBtn(props) {
   const copy = props.copyPass;
 
   return (
+        // <button
+        //   type="button"
+        //   className="btn btn-warning"
+        //   onClick={copy}
+        // >
+        //   {status}
+        // </button>
         <button
+          className="cybr-btn mt-2"
+          id="generate"
           type="button"
-          className="btn btn-warning"
           onClick={copy}
         >
-          {status}
+          {status}<span aria-hidden>_</span>
+          <span aria-hidden className="cybr-btn__glitch">
+            GENERATE_
+          </span>
+          <span aria-hidden className="cybr-btn__tag">
+            C77
+          </span>
         </button>
   );
 }
